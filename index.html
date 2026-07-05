@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>筋トレ育成ゲーム（左右別）</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>筋トレ育成ゲーム（左右別）</h1>
+
+  <div id="ui">
+    <div>
+      <h2>部位選択</h2>
+      <div id="muscle-buttons"></div>
+    </div>
+
+    <div>
+      <h2>左右選択</h2>
+      <div id="side-buttons"></div>
+    </div>
+
+    <div>
+      <h2>種目</h2>
+      <div id="exercise-buttons"></div>
+    </div>
+  </div>
+
+  <div id="status">
+    <p>部位: <span id="current-muscle">なし</span></p>
+    <p>側: <span id="current-side">-</span></p>
+    <p>サイズ: <span id="current-size">-</span></p>
+  </div>
+
+  <div id="character-wrapper">
+    <h2>キャラ表示（左右差）</h2>
+    <div id="character">
+      <div class="arm left-arm"></div>
+      <div class="body"></div>
+      <div class="arm right-arm"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
